@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>NSB 코딩예제사이트</title>
+  </head>
+  <body>
+    <h2>NSB 코딩예제사이트</h2>
+    <!-- 회원가입과 로그인을 포함한 두 개의 폼이 있는 컨테이너 -->
+    <div class="container" id="container">
+      <!-- 회원가입 폼 -->
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>계정 생성</h1>
+          <!-- 소셜 미디어로 회원가입 버튼 -->
+          <div class="social-container">
+            <a href="#" class="social"
+              ><i class="fa-brands fa-facebook fa-beat fa-lg"></i>
+            </a>
+            <a href="#" class="social"
+              ><i class="fa-brands fa-google-plus-g fa-beat-fade fa-lg"></i
+            ></a>
+            <a href="#" class="social"
+              ><i class="fa-brands fa-instagram fa-beat-fade fa-lg"></i
+            ></a>
+          </div>
+          <span>또는 이메일로 가입하세요</span>
+          <!-- 이름, 이메일, 비밀번호 입력 필드와 회원가입 버튼 -->
+          <input type="text" placeholder="이름" />
+          <input type="email" placeholder="이메일" />
+          <input type="password" placeholder="비밀번호" />
+          <button>가입하기</button>
+        </form>
+      </div>
+      <!-- 로그인 폼 -->
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>로그인</h1>
+          <!-- 소셜 미디어로 로그인 버튼 -->
+          <div class="social-container">
+            <a href="#" class="social">
+              <i class="fa-brands fa-facebook fa-beat fa-lg"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa-brands fa-google-plus-g fa-beat-fade fa-lg"></i>
+            </a>
+            <a href="#" class="social">
+              <i class="fa-brands fa-instagram fa-beat-fade fa-lg"></i>
+            </a>
+          </div>
+          <span>또는 계정을 사용하세요</span>
+          <!-- 이메일과 비밀번호 입력 필드, 비밀번호 재설정 링크와 로그인 버튼 -->
+          <input type="email" placeholder="이메일" />
+          <input type="password" placeholder="비밀번호" />
+          <a href="#">비밀번호를 잊으셨나요?</a>
+          <button>로그인</button>
+        </form>
+      </div>
+      <!-- 로그인과 회원가입 폼 전환을 위한 오버레이 -->
+      <div class="overlay-container">
+        <div class="overlay">
+          <!-- 왼쪽 오버레이 패널 (로그인 환영 메시지와 로그인 버튼) -->
+          <div class="overlay-panel overlay-left">
+            <h1>환영합니다!</h1>
+            <p>우리와 계속 연결하려면 개인 정보로 로그인하십시오</p>
+            <button class="ghost" id="signIn">로그인</button>
+          </div>
+          <!-- 오른쪽 오버레이 패널 (회원가입 환영 메시지와 회원가입 버튼) -->
+          <div class="overlay-panel overlay-right">
+            <h1>NSB 회원가입!</h1>
+            <p>개인 정보를 입력하고 함께 여정을 시작하세요</p>
+            <button class="ghost" id="signUp">가입하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 하단 푸터 -->
+    <footer>
+      <p>
+        Created with <i class="fa fa-heart"></i> by
+        <a
+          target="_blank"
+          href="https://www.notion.so/NSD-_NDB-3e67330ff9764a33a959d728dfd35c1c"
+          >순두부아니다</a
+        >
+        - 이 작품과 함께한 동안 어떻게 만들었는지 그리고 도전에 참여하는 방법에
+        대해
+        <a
+          target="_blank"
+          href="https://www.notion.so/NSD-_NDB-3e67330ff9764a33a959d728dfd35c1c"
+          >여기</a
+        >에서 읽어보세요.
+      </p>
+    </footer>
+
+    <script src="./login.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eeaad1758c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
